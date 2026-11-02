@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hesap Silme Talebi - Hidaya: Namaz Vakitleri ve Kuran</title>
+  <title>Hidaya Namaz Vakitleri - Kuran · Destek</title>
   <style>
     * {
       margin: 0;
@@ -57,20 +57,6 @@
       font-weight: 700;
       color: #1a3a2a;
       margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .card h2 .icon {
-      width: 28px;
-      height: 28px;
-      background-color: #e8f4ec;
-      border-radius: 8px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
     }
 
     .card p {
@@ -79,209 +65,85 @@
       margin-bottom: 12px;
     }
 
-    .steps {
-      list-style: none;
-      counter-reset: step-counter;
+    .card p:last-child {
+      margin-bottom: 0;
     }
 
-    .steps li {
-      counter-increment: step-counter;
-      display: flex;
-      gap: 14px;
-      margin-bottom: 14px;
-      font-size: 15px;
-      color: #4a4a4a;
-    }
-
-    .steps li::before {
-      content: counter(step-counter);
-      min-width: 26px;
-      height: 26px;
-      background-color: #1a3a2a;
-      color: #f5e6c8;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-
-    .data-table th {
-      background-color: #f0ede8;
-      text-align: left;
-      padding: 10px 12px;
+    .card a {
+      color: #1a3a2a;
       font-weight: 600;
-      color: #2c2c2c;
-      font-size: 13px;
-      border-bottom: 1px solid #e8e0d5;
-    }
-
-    .data-table td {
-      padding: 10px 12px;
-      border-bottom: 1px solid #f0ede8;
-      color: #4a4a4a;
-      vertical-align: top;
-    }
-
-    .data-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .badge-deleted {
-      background-color: #fde8e8;
-      color: #c0392b;
-    }
-
-    .badge-retained {
-      background-color: #fff3cd;
-      color: #856404;
-    }
-
-    .cta-button {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      background-color: #1a3a2a;
-      color: #f5e6c8;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: 600;
-      margin-top: 20px;
-      letter-spacing: 0.2px;
-      transition: background-color 0.2s;
-    }
-
-    .cta-button:hover {
-      background-color: #254d38;
-    }
-
-    .warning-box {
-      background-color: #fff8e6;
-      border: 1px solid #f5d97a;
-      border-radius: 8px;
-      padding: 14px 16px;
-      font-size: 14px;
-      color: #5c4b00;
-      margin-top: 14px;
-    }
-
-    .warning-box strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #856404;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 12px;
-      color: #999;
+      color: #777;
+    }
+  
+    .card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a3a2a;
+      margin: 18px 0 6px;
+    }
+
+    .card h3:first-of-type {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hidaya: Namaz Vakitleri ve Kuran</h1>
-    <p>Hesap Silme Talebi</p>
+    <h1>Hidaya Namaz Vakitleri - Kuran · Destek</h1>
+    <p>Sorularınız ve geri bildiriminiz için</p>
   </header>
 
   <div class="container">
 
     <div class="card">
-      <h2><span class="icon">📋</span> Hesabınızı Nasıl Silebilirsiniz?</h2>
-      <p>Hesabınızı ve verilerinizi silmek için aşağıdaki adımları izleyin:</p>
-      <ol class="steps">
-        <li>Uygulama içinde <strong>Ayarlar</strong> sekmesine gidin.</li>
-        <li><strong>Hesap</strong> bölümünü açın.</li>
-        <li><strong>"Hesabımı Sil"</strong> seçeneğine dokunun ve onaylayın.</li>
-        <li>Hesabınız ve tüm verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir.</li>
-      </ol>
-      <p>Uygulamaya erişiminiz yoksa veya bu yöntem işe yaramazsa aşağıdaki e-posta bağlantısını kullanabilirsiniz.</p>
-      <a class="cta-button" href="mailto:info@kahlcodigital.com?subject=Hesap%20Silme%20Talebi%20-%20Hidaya&body=Merhaba%2C%0A%0AHidaya%20uygulamas%C4%B1ndaki%20hesab%C4%B1m%C4%B1%20ve%20t%C3%BCm%20verilerimi%20silmenizi%20talep%20ediyorum.%0A%0AKayıtlı%20e-posta%20adresim%3A%20%5Buraya%20yazın%5D%0A%0ATeşekkürler.">
-        E-posta ile Talep Gönder
-      </a>
+      <h2>İletişim</h2>
+      <p>Sorun, öneri ve hata bildirimleri için bize yazın: <a href="mailto:info@kahlcodigital.com">info@kahlcodigital.com</a></p>
+      <p>Hata bildiriyorsanız telefon modelinizi ve sorunun hangi ekranda olduğunu yazmanız işimizi kolaylaştırır.</p>
     </div>
 
     <div class="card">
-      <h2><span class="icon">🗂️</span> Hangi Veriler Silinir?</h2>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Veri Türü</th>
-            <th>Durum</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Hesap bilgileri (e-posta, şifre)</td>
-            <td><span class="badge badge-deleted">Silinir</span></td>
-          </tr>
-          <tr>
-            <td>Kuran yer imleri ve okuma geçmişi</td>
-            <td><span class="badge badge-deleted">Silinir</span></td>
-          </tr>
-          <tr>
-            <td>Namaz takip verileri</td>
-            <td><span class="badge badge-deleted">Silinir</span></td>
-          </tr>
-          <tr>
-            <td>Zikir ve kaza namazı kayıtları</td>
-            <td><span class="badge badge-deleted">Silinir</span></td>
-          </tr>
-          <tr>
-            <td>Uygulama içi ayarlar ve tercihler</td>
-            <td><span class="badge badge-deleted">Silinir</span></td>
-          </tr>
-          <tr>
-            <td>Anonim uygulama kullanım istatistikleri</td>
-            <td><span class="badge badge-retained">30 gün sonra silinir</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Sık sorulanlar</h2>
 
-      <div class="warning-box">
-        <strong>Dikkat</strong>
-        Hesap silme işlemi geri alınamaz. Tüm verileriniz kalıcı olarak silinecek ve kurtarılamayacaktır.
-      </div>
+      <h3>Vakitler hangi kaynaktan geliyor?</h3>
+      <p>Namaz vakitleri Diyanet İşleri Başkanlığı verilerinden, il ve ilçe bazında alınır. Şu an yalnızca Türkiye'deki il ve ilçeler destekleniyor; yurt dışı için vakit gösterilmiyor.</p>
+
+      <h3>Bildirim gelmiyor</h3>
+      <p>Önce telefonunuzun ayarlarında Hidaya için bildirim izninin açık olduğunu kontrol edin. Uygulamadaki bildirim ayarlarından istediğiniz vakitlerin açık olduğuna bakın. Android'de pil tasarrufu ve otomatik başlatma ayarları bildirimleri geciktirebilir veya engelleyebilir; Hidaya için pil kısıtlamasını kaldırın ve otomatik başlatmaya izin verin. Uygulamayı ara sıra açmak bildirim planını günceller.</p>
+
+      <h3>Konumum yanlış</h3>
+      <p>Ayarlar'dan il ve ilçenizi elle seçebilirsiniz. Elle seçtiğiniz konum kullanılır, konum izni gerekmez.</p>
+
+      <h3>Kur'an sesi çalmıyor</h3>
+      <p>Kur'an tilaveti internet üzerinden çalınır; internet bağlantınızı kontrol edin. Bağlıysanız ses sunucusu geçici olarak yanıt vermiyor olabilir, biraz sonra tekrar deneyin veya Ayarlar'dan başka bir kâri seçin.</p>
+
+      <h3>Verilerimi nasıl silerim?</h3>
+      <p>Aşağıdaki "Verilerinizi silme" bölümüne bakın.</p>
+    </div>
+
+    <div class="card" id="veri-silme">
+      <h2>Verilerinizi silme</h2>
+      <p>Hidaya hesap oluşturmanızı istemez; ad, e-posta veya şifre toplanmaz. Namaz takibi, kaza sayaçları, zikir, yer imleri ve ayarlarınız yalnızca kendi cihazınızda saklanır.</p>
+      <p>Verilerinizi silmek için uygulamayı cihazınızdan kaldırmanız yeterlidir. Android'de kaldırmadan silmek için: Ayarlar &gt; Uygulamalar &gt; Hidaya &gt; Depolama &gt; Verileri temizle. Cihaz yedeklerinizde (iCloud veya Google) bir kopya kalabilir.</p>
+      <p>Ayrıntılar: <a href="https://furecon.github.io/hidaya-support/delete-account.html">Veri silme sayfası</a></p>
     </div>
 
     <div class="card">
-      <h2><span class="icon">✉️</span> İletişim</h2>
-      <p>Herhangi bir sorun yaşarsanız veya sorularınız varsa bize ulaşabilirsiniz:</p>
-      <p>
-        <a href="mailto:info@kahlcodigital.com" style="color:#1a3a2a; font-weight:600;">info@kahlcodigital.com</a>
-      </p>
-      <p style="font-size:14px; color:#888; margin-top:8px;">Talepler genellikle 1-3 iş günü içinde yanıtlanır.</p>
+      <h2>Bağlantılar</h2>
+      <p><a href="https://furecon.github.io/hidaya-privacy/">Gizlilik Politikası</a></p>
+      <p><a href="https://furecon.github.io/hidaya-support/delete-account.html">Veri Silme</a></p>
     </div>
 
   </div>
 
   <footer>
-    &copy; 2024 Kahlco Digital. Tüm hakları saklıdır.
+    &copy; 2026 Hidaya Namaz Vakitleri - Kuran &mdash; Furkan Aydemir
   </footer>
 
 </body>
